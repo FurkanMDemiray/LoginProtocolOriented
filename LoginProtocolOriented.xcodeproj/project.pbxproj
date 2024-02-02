@@ -19,6 +19,8 @@
 		DD40AF7D2B6D715300146DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40AF7C2B6D715300146DA3 /* LoginViewController.swift */; };
 		DD40AF802B6D731D00146DA3 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40AF7F2B6D731D00146DA3 /* RootViewModel.swift */; };
 		DD40AF822B6D738700146DA3 /* RootViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40AF812B6D738700146DA3 /* RootViewModelOutput.swift */; };
+		DD40AF862B6D763B00146DA3 /* LoginStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40AF852B6D763B00146DA3 /* LoginStorageService.swift */; };
+		DD40AF882B6D76DB00146DA3 /* LoginStorageServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40AF872B6D76DB00146DA3 /* LoginStorageServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		DD40AF7C2B6D715300146DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD40AF7F2B6D731D00146DA3 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		DD40AF812B6D738700146DA3 /* RootViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelOutput.swift; sourceTree = "<group>"; };
+		DD40AF852B6D763B00146DA3 /* LoginStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStorageService.swift; sourceTree = "<group>"; };
+		DD40AF872B6D76DB00146DA3 /* LoginStorageServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStorageServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		DD40AF492B6D6FFF00146DA3 /* LoginProtocolOriented */ = {
 			isa = PBXGroup;
 			children = (
+				DD40AF842B6D760B00146DA3 /* StorageService */,
 				DD40AF832B6D745400146DA3 /* View */,
 				DD40AF7E2B6D730D00146DA3 /* ViewModel */,
 				DD40AF4A2B6D6FFF00146DA3 /* AppDelegate.swift */,
@@ -150,6 +155,15 @@
 				DD40AF7C2B6D715300146DA3 /* LoginViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DD40AF842B6D760B00146DA3 /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				DD40AF852B6D763B00146DA3 /* LoginStorageService.swift */,
+				DD40AF872B6D76DB00146DA3 /* LoginStorageServiceImpl.swift */,
+			);
+			path = StorageService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD40AF882B6D76DB00146DA3 /* LoginStorageServiceImpl.swift in Sources */,
 				DD40AF4F2B6D6FFF00146DA3 /* RootViewController.swift in Sources */,
 				DD40AF4B2B6D6FFF00146DA3 /* AppDelegate.swift in Sources */,
 				DD40AF822B6D738700146DA3 /* RootViewModelOutput.swift in Sources */,
+				DD40AF862B6D763B00146DA3 /* LoginStorageService.swift in Sources */,
 				DD40AF4D2B6D6FFF00146DA3 /* SceneDelegate.swift in Sources */,
 				DD40AF7D2B6D715300146DA3 /* LoginViewController.swift in Sources */,
 				DD40AF802B6D731D00146DA3 /* RootViewModel.swift in Sources */,

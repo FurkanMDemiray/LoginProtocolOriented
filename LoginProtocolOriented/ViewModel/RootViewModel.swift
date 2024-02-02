@@ -11,9 +11,15 @@ class RootViewModel{
     
     weak var output: RootViewModelOutput?
     
+    private let loginStorageService: LoginStorageService
+    
+    init(loginStorageService: LoginStorageService) {
+        self.loginStorageService = loginStorageService
+    }
+    
     func checkLogin() {
 
-        if let accessToken = UserDefaults.standard.string(forKey: "ACCESS_TOKEN"), !accessToken.isEmpty {
+        if let accessToken = loginStorageService.getUserAccessToken(), !accessToken.isEmpty {
             //showMainView()
             output?.showMainView()
         }
